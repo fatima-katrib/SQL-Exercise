@@ -5,3 +5,18 @@ SELECT Points FROM Students WHERE Name='Alex';
 INSERT INTO Students VALUES(10, 'Fatima', '26', 'F', 500);
 UPDATE Students SET Points = points+10 WHERE Name='Basma';
 UPDATE Students SET Points = points-10 WHERE Name='Alex';
+
+
+CREATE TABLE graduates(
+    ID INTEGER NOT NULL  PRIMARY KEY AUTOINCREMENT,
+    Name  TEXT NOT NULL UNIQUE,
+    Age INTEGER,
+	Gender TEXT,
+	Points INTEGER,
+	Graduation TEXT
+);
+INSERT INTO graduates(Name, Age, Gender, Points)
+SELECT name, Age, Gender, Points FROM students WHERE name = "Layal";
+UPDATE graduates SET Graduation = "2018-09-08" WHERE name = "Layal";
+DELETE FROM students WHERE name = "Layal";
+
