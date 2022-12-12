@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/fatima/codi/SQL-Exercise/myDatabase.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1143"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,15:mainsqlite_sequence"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">SELECT Name FROM Students;
+SELECT * FROM Students WHERE Age &gt; 30;
+SELECT Name FROM Students WHERE Gender='F' AND Age=30;
+SELECT Points FROM Students WHERE Name='Alex';
+INSERT INTO Students VALUES(10, 'Fatima', '26', 'F', 500);
+UPDATE Students SET Points = points+10 WHERE Name='Basma';
+UPDATE Students SET Points = points-10 WHERE Name='Alex';
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
